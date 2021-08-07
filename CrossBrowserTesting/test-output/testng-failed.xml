@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="TestEdge(failed)">
+    <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="com.CrossBrowser.test.ActitimeLogin">
+        <methods>
+          <include name="login"/>
+          <include name="enterURL"/>
+          <include name="closeBrowser"/>
+          <include name="openbrowser"/>
+        </methods>
+      </class> <!-- com.CrossBrowser.test.ActitimeLogin -->
+    </classes>
+  </test> <!-- TestEdge(failed) -->
+</suite> <!-- Failed suite [Suite] -->
